@@ -10,7 +10,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <form>
       <Input
         placeholder="TEXT"
         value={inputValue1}
@@ -23,7 +23,7 @@ const App = () => {
         onChange={handleChange}
         variant="upper"
       />
-    </div>
+    </form>
   );
 };
 
