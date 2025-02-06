@@ -13,6 +13,17 @@ export const Input = (props) => {
 };
 
 const StyledInput = styled.input`
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.2s ease-in-out;
+  outline: none;
+  margin: 15px 0;
+  &:focus {
+    border-color: #007bff;
+  }
   ${(props) =>
     props.variant === "upper" &&
     `text-transform: uppercase;
