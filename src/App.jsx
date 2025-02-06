@@ -4,12 +4,9 @@ import { Input } from "./components/Input";
 const App = () => {
   const [inputValue1, setInputValue1] = useState();
 
-  const upercaseText = (e) => {
+  const handleChange = (e) => {
     setInputValue1(e.target.value);
     console.log(e.target.value);
-  };
-  const lowercase = (e) => {
-    setInputValue1(e.target.value);
   };
 
   return (
@@ -17,13 +14,13 @@ const App = () => {
       <Input
         placeholder="TEXT"
         value={inputValue1}
-        onChange={lowercase}
+        onChange={handleChange}
         variant="lower"
       />
       <Input
         placeholder="TEXT"
         value={inputValue1}
-        onChange={upercaseText}
+        onChange={handleChange}
         variant="upper"
       />
     </div>
